@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html>
+  <head lang="en">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Snake</title>
+    <!-- Link our styles from snake_game.css -->
+    <link rel="stylesheet" type="text/css" href="snake_game.css" />
+  </head>
+  <body>
+    <!-- #gameContainer is the main game board-->
+    <div id="title">
+      <h1>Happy Birthday Hrishya! Hope you have had a great day!\nUse your arrow keys on the keyboard to make the snake move around and eat as much food as you can! Make sure that the snake's body doesnt overlap and Reach 10 food consumed to unlock a secret message ❓</h1>
+    </div>
+    <div id="gameContainer"></div>
+
+    <!-- #scoreContainer contains the scores  -->
+    <div id="scoreContainer">
+      <div class="scoreBoard">Food: <span id="pointsEarned">0</span></div>
+      <div class="scoreBoard">Blocks: <span id="blocksTravelled">0</span></div>
+    </div>
+
+    <!-- #onScreenControllers contains the navigation buttons for mobile screens -->
+    <div id="onScreenControllers">
+      <button id="leftButton">◀️</button>
+      <div>
+        <button id="upButton">🔼</button>
+        <button id="downButton">🔽</button>
+      </div>
+      <button id="rightButton">▶️</button>
+    </div>
+  </body>
+
+  <!-- #Load our snake_game.js containing the game logic -->
+  <script src="snake_game.js"></script>
+</html>
